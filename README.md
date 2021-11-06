@@ -4,6 +4,11 @@ https://www.epicentro.iss.it/coronavirus/aggiornamenti
 
 Il database inizia dal Report del 14 Luglio 2021 e viene aggiornato ad ogni nuovo Report ISS compatibile.
 
+Vedere [Esempio di Utilizzo](https://github.com/maxdevblock/covid_iss_vaccini_reports/blob/main/Esempio_di_utilizzo.ipynb)
+per alcuni esempi in `Python` con Jupyter Notebook.
+
+***
+
 Struttura del database (formato Comma Separated Values, `.csv`)
 
 | Colonna      | DataType | Descrizione     |
