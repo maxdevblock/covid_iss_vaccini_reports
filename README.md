@@ -17,7 +17,7 @@ Struttura del database (formato Comma Separated Values, `.csv`)
 | pubblicazione   | Formatted String        | Data di pubblicazione del Report `YYYY-MM-DD`    |
 | url | String | Link al Report in formato pdf |
 | fascia | String | Fascia d'età: 12-39, 40-59, 60-79, 80+ |
-| vaccino | String | Stato vaccinale: non vaccinati, vaccinati incompleti, vaccinati completi |
+| vaccino | String | Stato vaccinale: non vaccinati, vaccinati incompleti, vaccinati completi. Dal 2021-11-10 i vaccinati completi sono suddivisi in: <= 6 mesi, > 6 mesi e + aggiuntiva/booster |
 | popolazione | Integer | Popolazione di riferimento per data, stato vaccinale e fascia d'età (vedi popolazione_giorno) |
 | diagnosi | Integer | Numero di diagnosi di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi diagnosi_start e diagnosi_end) |
 | ricoveri | Integer | Numero di ricoveri di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi ricoveri_start e ricoveri_end) |
