@@ -7,6 +7,8 @@ Il database inizia dal Report del 14 Luglio 2021 e viene aggiornato ad ogni nuov
 Vedere [Esempio di Utilizzo](https://github.com/maxdevblock/covid_iss_vaccini_reports/blob/main/Esempio_di_utilizzo.ipynb)
 per alcuni esempi in `Python` con Jupyter Notebook.
 
+Per ulteriori modalità di utilizzo del dataset, vedere [Efficacia Vaccinale su EpiData.it](https://github.com/maxdevblock/covid-19-website/blob/master/Italia/Vaccini_Efficacia.ipynb)
+
 ***
 
 Struttura del database (formato Comma Separated Values, `.csv`)
