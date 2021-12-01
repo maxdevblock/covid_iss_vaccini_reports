@@ -4,6 +4,8 @@ https://www.epicentro.iss.it/coronavirus/aggiornamenti
 
 Il database inizia dal Report del 14 Luglio 2021 e viene aggiornato ad ogni nuovo Report ISS compatibile.
 
+> NB: dal Report del 2021-11-10 i vaccinati completi sono suddivisi in tre sotto categorie; vedi _vaccino_ per dettagli
+
 Vedere [Esempio di Utilizzo](https://github.com/maxdevblock/covid_iss_vaccini_reports/blob/main/Esempio_di_utilizzo.ipynb)
 per alcuni esempi in `Python` con Jupyter Notebook.
 
@@ -18,8 +20,8 @@ Struttura del database (formato Comma Separated Values, `.csv`)
 | data      | Formatted String       | Data di riferimento del Report `YYYY-MM-DD`   |
 | pubblicazione   | Formatted String        | Data di pubblicazione del Report `YYYY-MM-DD`    |
 | url | String | Link al Report in formato pdf |
-| fascia | String | Fascia d'età: 12-39, 40-59, 60-79, 80+ |
-| vaccino | String | Stato vaccinale: non vaccinati, vaccinati incompleti, vaccinati completi. Dal 2021-11-10 i vaccinati completi sono suddivisi in: <= 6 mesi, > 6 mesi e + aggiuntiva/booster |
+| fascia | String | Fascia d'età: `12-39`, `40-59`, `60-79`, `80+` |
+| vaccino | String | Stato vaccinale: `non vaccinati`, `vaccinati incompleto`, `vaccinati completo`. Dal 2021-11-10 i `vaccinati completo` sono suddivisi in: `vaccinati completo <= 6 mesi`, `vaccinati completo > 6 mesi` e `vaccinati completo + aggiuntiva/booster` |
 | popolazione | Integer | Popolazione di riferimento per data, stato vaccinale e fascia d'età (vedi popolazione_giorno) |
 | diagnosi | Integer | Numero di diagnosi di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi diagnosi_start e diagnosi_end) |
 | ricoveri | Integer | Numero di ricoveri di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi ricoveri_start e ricoveri_end) |
@@ -34,7 +36,7 @@ Struttura del database (formato Comma Separated Values, `.csv`)
 | intensive_end | Formatted String | Estremo superiore del periodo di riferimento per il valore intensive `YYYY-MM-DD` |
 | decessi_start | Formatted String | Estremo inferiore del periodo di riferimento per il valore decessi `YYYY-MM-DD` |
 | decessi_end | Formatted String | Estremo superiore del periodo di riferimento per il valore decessi `YYYY-MM-DD` |
-| totale | Integer | Totale della popolazione nella fascia d'età e nel giorno di riferimento: non vaccinati + vaccinati incompleto + vaccinati completo |
+| totale | Integer | Totale della popolazione nella fascia d'età e nel giorno di riferimento: `non vaccinati` + `vaccinati incompleto` + `vaccinati completo` (o somma delle sotto categorie di `vaccinati completo` dal 2021-11-10 in poi) |
 | percentuale_popolazione | Float | Percentuale di popolazione vaccinata per fascia d'età, ovvero rapporto popolazione / totale |
 | percentuale_diagnosi | Float | Rapporto tra diagnosi e popolazione per fascia d'età e stato vaccinale |
 | percentuale_ricoveri | Float | Rapporto tra ricoveri e popolazione per fascia d'età e stato vaccinale |
