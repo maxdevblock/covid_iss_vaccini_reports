@@ -8,6 +8,8 @@ Il database inizia dal Report del 14 Luglio 2021 e viene aggiornato ad ogni nuov
 
 > NB2: dal Report del 2021-12-01 i vaccinati completi sono suddivisi in >5 o <5 mesi anziché >6 o <6 mesi come in precedenza; vedi _vaccino_ per dettagli
 
+> NB3: dal Report del 2021-12-15 i vaccinati completi nel report sono suddivisi in >150 giorni o <150 giorni; in questo dataset **resteranno** invece segnati come rispettivamente >5 e <5 mesi.
+
 Vedere [Esempio di Utilizzo](https://github.com/maxdevblock/covid_iss_vaccini_reports/blob/main/Esempio_di_utilizzo.ipynb)
 per alcuni esempi in `Python` con Jupyter Notebook.
 
@@ -23,7 +25,7 @@ Struttura del database (formato Comma Separated Values, `.csv`)
 | pubblicazione   | Formatted String        | Data di pubblicazione del Report `YYYY-MM-DD`    |
 | url | String | Link al Report in formato pdf |
 | fascia | String | Fascia d'età: `12-39`, `40-59`, `60-79`, `80+` |
-| vaccino | String | Stato vaccinale: `non vaccinati`, `vaccinati incompleto`, `vaccinati completo`. Dal 2021-11-10 i `vaccinati completo` sono suddivisi in: `vaccinati completo <= 6 mesi`, `vaccinati completo > 6 mesi` e `vaccinati completo + aggiuntiva/booster`. Dal 2021-12-01 i `vaccinati completo` sono suddivisi in: `vaccinati completo <= 5 mesi`, `vaccinati completo > 5 mesi` e `vaccinati completo + aggiuntiva/booster` |
+| vaccino | String | Stato vaccinale: `non vaccinati`, `vaccinati incompleto`, `vaccinati completo`. Dal 2021-11-10 i `vaccinati completo` sono suddivisi in: `vaccinati completo <= 6 mesi`, `vaccinati completo > 6 mesi` e `vaccinati completo + aggiuntiva/booster`. Dal 2021-12-01 i `vaccinati completo` sono suddivisi in: `vaccinati completo <= 5 mesi`, `vaccinati completo > 5 mesi` e `vaccinati completo + aggiuntiva/booster`. Dal 2021-12-15 per `<= 5 mesi` e `> 5 mesi` si intende <=150 giorni e >150 giorni |
 | popolazione | Integer | Popolazione di riferimento per data, stato vaccinale e fascia d'età (vedi popolazione_giorno) |
 | diagnosi | Integer | Numero di diagnosi di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi diagnosi_start e diagnosi_end) |
 | ricoveri | Integer | Numero di ricoveri di COVID-19 per intervallo temporale, stato vaccinale e fascia d'età (vedi ricoveri_start e ricoveri_end) |
