@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/425325769.svg)](https://zenodo.org/badge/latestdoi/425325769)
+
 # covid_iss_vaccini_reports
 Dati dei reports ISS su campagna vaccinale COVID-19
 https://www.epicentro.iss.it/coronavirus/aggiornamenti
