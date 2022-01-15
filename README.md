@@ -1,5 +1,7 @@
 [![DOI](https://zenodo.org/badge/425325769.svg)](https://zenodo.org/badge/latestdoi/425325769)
 
+> **Dall'aggiornamento del 12 Gennaio 2022 gli aggiornamenti ISS su campagna vaccinale non sono più compatibili con l'attuale struttura dati di questo database in quanto le popolazioni di riferimento sono state diversificate per evento (diagnosi, ospedalizzazione, terapie intensive e decessi). EpiData sarà felice di accogliere volontari per rivedere e mantenere il presente database con la nuova struttura dati da definire. Per suggerimenti e collaborazioni, potete scrivere a info@epidata.it o su Twitter a @EpiData_it**
+
 # covid_iss_vaccini_reports
 Dati dei reports ISS su campagna vaccinale COVID-19
 https://www.epicentro.iss.it/coronavirus/aggiornamenti
